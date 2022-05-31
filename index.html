@@ -141,15 +141,15 @@
             <h2>principal facts</h2>
             <div class="timer">
               <div class="act">
-                <p class="counter" data-target="6000">0</p>
+                <p class="counter" data-target="200">0</p>
                 <h5>successul projects</h5>
               </div>
               <div class="act">
-                <p class="counter" data-target="300">0</p>
+                <p class="counter" data-target="240">0</p>
                 <h5>happy clients</h5>
               </div>
               <div class="act">
-                <p class="counter" data-target="100">0</p>
+                <p class="counter" data-target="210">0</p>
                 <h5>awards won</h5>
               </div>
               <!-- <div class="act">
@@ -165,25 +165,18 @@
             <br />
             <br />
             <br />
+             <h2>my clients</h2>
+             <div class="logos">
+                 <img src="./image_logo-removebg-preview.png" alt="#">
+             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
-        integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"
-        integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script> -->
-    <!-- $(".count").counterUp({
-    delay: 10,
-    time: 6000
-}); -->
+   
     <script>
       const counters = document.querySelectorAll(".counter");
-      const speed = 100;
+      const speed = 200;
 
       counters.forEach((counter) => {
         const updateCount = () => {
@@ -192,7 +185,7 @@
           const inc = target / speed;
           console.log(count);
           if (count < target) {
-            counter.innerText = count + inc;
+            counter.innerText =Math.floor (count + inc);
             setTimeout(updateCount, 45);
           } else {
             count.innerText = target;
